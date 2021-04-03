@@ -27,6 +27,7 @@ class Song
       else
         self.artist = Artist.new(name)
       end
+      binding.pry
     end
   end
   
