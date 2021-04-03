@@ -20,12 +20,14 @@ class Song
   end
   
   def artist_name=(name)
-    if self.artist == nil
-      
-     self.artist = Artist.new(name)
-    else
-      self.artist.name=name
-    end
+    #if self.artist == nil
+      result = Artist.all.find {|artist| artist.name==name}
+      if result == name
+        self.artist.name = name
+      else
+        self.artist = Artist.new(name)
+      end
+    #end
   end
   
 end
