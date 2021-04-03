@@ -21,7 +21,7 @@ class Song
   
   def artist_name=(name)
     result = Artist.all.find {|artist| artist.name==name}
-        binding.pry
+        #binding.pry
     if result == name
       self.artist = result
     else
