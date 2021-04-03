@@ -23,10 +23,10 @@ class Song
     result = Artist.all.find {|artist| artist.name==name}
     if result == name
       self.artist.name = name
+      self.artist
     else
       self.artist = Artist.new(name)
     end
-      binding.pry
   end
   
 end
