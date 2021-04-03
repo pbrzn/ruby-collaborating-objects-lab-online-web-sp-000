@@ -28,7 +28,7 @@ class Song
       self.artist = new_artist
     end
     #binding.pry
-    self.artist
+    self.artist.name
   end
   
 end
