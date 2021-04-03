@@ -25,7 +25,8 @@ class Song
       self.artist.name = name
       self.artist
     else
-      self.artist = Artist.new(name)
+      new_artist = Artist.new(name)
+      self.artist = new_artist
     end
   end
   
