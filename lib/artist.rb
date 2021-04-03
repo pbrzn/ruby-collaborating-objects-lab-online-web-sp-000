@@ -26,6 +26,7 @@ class Artist
     if result==nil
       result=self.new(name)
     end
+    result
   end
 
   def print_songs
